@@ -26,5 +26,11 @@ router.get("/meet_team", function (rep,res){
     
     
 });
+router.get("/mary", function (rep,res){
+    //console.log("hello I am on the start page");
+    res.render("mary");
+    
+    
+});
 
 module.exports= router;
