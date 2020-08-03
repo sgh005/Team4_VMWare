@@ -8,13 +8,14 @@
     <p>Intro.</p>
     <p>About Us</p>
     <!--button-->
-    <p><button onclick="location.href = 'level1';" > Go!</button>
-        
-    </p>
-    <h5>Signin with google</h5>
+    <!-- <p><button onclick="location.href = 'level1';" > Go!</button>      
+    </p> -->
+    <h5>Signin with google to play</h5>
         <!-- Google login -->
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <meta name="google-signin-client_id" content="914100676838-jpn4s0r4ldhum693jp35ngp6lff872kd.apps.googleusercontent.com">
-    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <div class="g-signin2" data-onsuccess="onSignIn"
+    onclick="location.href = 'level1';"
+    data-redirecturi="http://localhost:3000/level1"></div>
     </body>
 </html>
