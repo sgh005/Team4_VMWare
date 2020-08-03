@@ -4,12 +4,57 @@
     <head>
         <title>Meet Dr. Ellen Ochoa </title>
         <h1>Meet Dr. Ellen Ochoa</h1>
+        <style>
+            body {
+        background-color: #0C0D43;
+        
+        
+      }
+      img{
+              max-width: 40%;
+              max-height: 40%;
+              display: block; /* remove extra space below image */
+          }
+          .box{
+              float: left;
+              width: 50px;        
+              border: 5px solid black;
+          }    
+          .box.large{
+              height: 200px;
+          }
+          .box.small{
+              height: 100px;
+          }
+          h1{
+      font-size:300%;
+      text-align:center;
+      color: white;
+    }
+          </style>
     </head>
     <body>
-    <iframe width="420" height="345" src="https://www.youtube.com/embed/J8d0cdt_C9g"></iframe>
+        <div class="container">
+            <div class="row">
+              <div class="span4">
+                <img class="mx-auto d-block" src="ellen.png" />
+              </div>
+              <div class="span4">
+                  
 
+                <iframe width="420" height="345" src="https://www.youtube.com/embed/J8d0cdt_C9g"></iframe>
+
+                  </div>
+              <div class="span4"></div>
+            </div>
+             <!--buttons-->
+             <button type="button" class="btn btn-primary  btn-lg btn-block"  onclick="location.href = '/';">Next Level</button>
+      
+          </div>
+    
     <!-- todo add path to next level or back to the map -->
-    <p><button onclick="location.href = '/';" >Back to Main page to select a new collection</button>
+    <p>
+        
     </p>
     </body>
 </html>
