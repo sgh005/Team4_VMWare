@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">                                                                                                            
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="space.css">
+    </head>
+    <body>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <body>
+
+        <div class="w3-container w3-black">
+        <h1> Level 3 </h1>                                                                                                                     </div>
+        </div> 
+
+        <div class="container">
+            <!-- First Question-->
+            <div id = 'first' >
+                
+                    <h3> Use the following class to answer the question: </h3> <br>
+                    
+                    <h4><b> Class Astronaut: </b>  </h4>
+                    <h4>   def __init__(self, name, messages = None, is_prepared = None): </h4> 
+                        <div class="a"> self.name = name </div>
+                        <div class="a"> self.is_prepared = is_prepared </div>
+                        <div class="a"> self.is_prepared = is_prepared </div>
+    
+                    <h4> def log_message(new_message): </h4> 
+                        <div class="a">messages.append(new_message) </div>
+                        
+                    <h4> def report messages():</h4> 
+                        <div class="a">for m in self.messages: </div>
+                            <div class="b" >print(m)</div>
+
+                    <h4> def prepared(number_of_training_hours):</h4> 
+                        <div class="a">if number_of_training_hours >= 100: </div>
+                            <div class="b" >self.is_prepared = true</div>
+                        <div class="a">else: </div>
+                            <div class="b" >self.is_prepared = false</div>
+                        <div class="a">self.is_prepared = false </div>
+                        
+                    <h4> def body_status(days_with_gravity, days_without_gravity):</h4> 
+                        <div class="a">if gravity_time > no_gravity_time: </div>
+                            <div class="b" >body_status =  “Ready for life on Earth”</div>
+                        <div class="a">elif gravity_time == no_gravity_time: </div>
+                            <div class="b" >body_status = “Almost ready for life on Earth”</div>
+                        <div class="a">else :</div>
+                            <div class="b" >body_status = “Not ready for life on Earth”</div>
+                        <div class="a">return body_status </div>
+                </div>
+                </br> 
+                           </br>
+                <div id = 'q1'>
+                <h3> Let tylar = Astronaut(“tylar”). What is the correct call if Astronaut Tylar wanted to log a new message saying “The Earth is round!”?</h3>
+                <!--Answers-->
+                <form >
+                    <input type="radio" name="choice" value="A"> tylar.log_message(“The Earth is round!”)<br>
+                    <input type="radio" name="choice" value="B"> tylar.new_message(“The Earth is round!”)<br>
+                    <input type="radio" name="choice" value="C"> tylar.log_message(“The Moon is round!”)<br>
+                    <input type="radio" name="choice" value="D"> tylar.new_message(“The Moon is round!”)<br></br>
+                </form>
+
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" id = "myBtn"  data-target="#myModal" onclick = "level3('first', 'second','q1', 'q2')">Submit Answer</button>
+                </div>
+            </div>
+            <br>
+            
+            <!--data-toggle="modal" -->
+        
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>You're right!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Question Bank -->
+
+        <!--Second Question-->
+        <div id = 'second', style="visibility: hidden" >
+            <div id = 'q2'>
+                <h3> Astronaut Tylar wants to go to space. She has completed 150 hours of training. What is the correct method call to find out if Tylar is prepared to go to space?</h3>
+                <!--Answers-->
+                <form >
+                    <input type="radio" name="choice" value="A"> tylar.body_status(150,150)<br>
+                    <input type="radio" name="choice" value="B"> tylar.log_message(“150”)<br>
+                    <input type="radio" name="choice" value="C"> tylar.prepared(150)<br>
+                    <input type="radio" name="choice" value="D"> tylar.prepared(100)<br></br>
+                </form>
+                <button type="button" class="btn btn-info btn-lg" id = "myBtn"  data-target="#myModal" onclick = "level3('second', 'third','q2', 'q3')">Submit Answer</button>
+            </div>
+        </div>
+
+        <!--Third Question-->
+        <div id = 'third', style="visibility: hidden" >
+            <div id = 'q3'>
+                <h3>  What is the output of the previous call? </h3>
+                <!--Answers-->
+                <form >
+                    <input type="radio" name="choice" value="A"> True<br>
+                    <input type="radio" name="choice" value="B"> False<br>
+                    <input type="radio" name="choice" value="C"> Null<br>
+                    <input type="radio" name="choice" value="D"> None of the Above <br></br>
+                </form>
+                <button type="button" class="btn btn-info btn-lg" id = "myBtn"  data-target="#myModal" onclick = "level3('third', 'fourth','q3', 'q4')">Submit Answer</button>
+            </div>
+        </div>
+
+        <!--Fourth Question-->
+        <div id = 'fourth', style="visibility: hidden" >
+            <div id = 'q4'>
+                <h3>  Astronaut Tylar went to space, and has now returned to Earth. However, depending on how long an astronaut has been in space, it can take a while to be adjusted well enough to continue life on Earth, in an atmosphere with gravity. If Tylar spent 14 days in space without gravity, and 5 days on Earth with gravity, what is her body status? (Hint: use the def body_status function) </h3>
+                <!--Answers-->
+                <form >
+                    <input type="radio" name="choice" value="A"> “Almost ready for life on Earth”<br>
+                    <input type="radio" name="choice" value="B"> “Not ready for life on Earth”<br>
+                    <input type="radio" name="choice" value="C"> “Ready for life on Earth”<br>
+                    <input type="radio" name="choice" value="D"> “Prepared for life on Earth” <br></br>
+                </form>
+                <button type="button" class="btn btn-info btn-lg" id = "myBtn"  data-target="#myModal" onclick = "level3('fourth', 'fourth','q4', 'q4')">Submit Answer</button> 
+        </div>
+        </div>
+        <button type="button" class="btn btn-info btn-lg" onclick="location.href = 'ellen';">Click here to complete the puzzle</button>
+
+    </body>
+    
+    <!--script-->
+    <script src="script.js"></script>
+</html>

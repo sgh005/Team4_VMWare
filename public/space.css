@@ -1,0 +1,25 @@
+body {
+    background-image: url("stars.jpg");
+    color: white;
+   }
+   div{
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    
+   }
+   .modal-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50%;
+}
+
+.a {
+    margin-left: 40px;
+  }
+.b {
+    margin-left: 70px;
+}
+.c {
+    margin-left: 100px;
+}
