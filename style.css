@@ -1,6 +1,15 @@
-.modal-dialog {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.modal-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50%;
+}
+
+div.a {
+    text-indent: 50px;
   }
+div.b {
+    text-indent: 150px;
+}
+
+  
