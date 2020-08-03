@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">   
+            <link rel="stylesheet" href="space.css">                                                                                                         
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            
+    </head>
+    <body>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <body>
+
+        <div class="w3-container w3-black">
+        <h1> Level 2 </h1>                                                                                                                     </div>
+        </div> 
+
+        <div class="container">
+            <!-- First Question-->
+            <div id = 'first' >
+                <div id = 'q1'>
+                    <h3> What is the expected output of get_time_elapsed(1,5) given the following code snippet?</h3>
+                    <BLOCKQUOTE> <h4>   def get_distance(start, end): </h4> 
+                        <div class="a"> if end < start: </div>
+                            <div class="b">elapsed_time = null</div>
+                        <div class="a">elif start == end:</div>
+                            <div class="b" >elapsed_time = 0 </div>
+                        <div class="a">else:  </div>
+                            <div class="b">elapsed_time = end - start </div> 
+                        <div class="a">return elapsed_time </div>
+                    </BLOCKQUOTE>
+                </div>
+
+                <!--Answers-->
+                <form >
+                    <input type="radio" name="choice" value="A"> Null<br>
+                    <input type="radio" name="choice" value="B"> 4<br>
+                    <input type="radio" name="choice" value="C"> 0<br>
+                    <input type="radio" name="choice" value="D"> 5<br></br>
+                </form>
+
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" id = "myBtn"  data-target="#myModal" onclick = "level2('first', 'second', 'q1', 'q2')">Submit Answer</button>
+            </div>
+            <br>
+            
+            <!--data-toggle="modal" -->
+        
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>You're right!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Question Bank -->
+
+        <!--Second Question-->
+        <div id = 'second', style="visibility: hidden" >
+            <div id = 'q2'>
+                <h3>What is the expected output of get_directions(coffee_shop, school) given the following code snippet?</h3>
+                <BLOCKQUOTE> <h4> def get_directions(a, b): </h4>
+                    <div class="a"> directions = [“begin”]</div> 
+                    <div class="a"> if (a == home): </div>
+                        <div class="b">if (b == coffee_shop):</div>
+                            <div class="c">directions.append(“turn right”)</div>
+                            <div class="c">directions.append(“turn left”)</div>
+                            <div class="c">directions.append(“arrived”)</div>
+                        <div div class="b">else:</div>
+                            <div class="c">directions.append(“turn left”)</div>
+                    <div class="a">elif (a == coffee_shop):</div>
+                        <div class="b" >if (b == home)</div>
+                            <div class="c" >directions.append(“turn right”)</div>
+                            <div class="c" >directions.append(“turn left”)</div>
+                            <div class="c">directions.append(“arrived”)</div>
+                        <div class="b" >elif (b == school):</div>
+                            <div class="c" >directions.append(“turn left”)</div>
+                            <div class="c">directions.append(“arrived”)</div>
+                        <div class="b">else:  </div>
+                            <div class="c" >directions.append(“turn right”)</div> 
+                    <div class="a">else: </div>
+                        <div class="b" >directions.append(“rerouting”)</div>                              
+                    <div class="a">	return directions </div>
+                </BLOCKQUOTE><br>
+            </div>
+
+                <!--Answers-->
+                <form >
+                    <input type="radio" name="choice" value="A"> directions = [“begin”, “turn left”, “arrived”]<br>
+                    <input type="radio" name="choice" value="B"> directions = [“begin”, “turn left”, “turn right”, “arrived”]<br>
+                    <input type="radio" name="choice" value="C"> directions = [“begin”, “rerouting”]<br>
+                    <input type="radio" name="choice" value="D"> directions = [“begin”, “turn right”, “turn left”, “arrived”]<br></br>
+                </form>
+                <button type="button" class="btn btn-info btn-lg" id = "myBtn"  data-target="#myModal" onclick = "level2('second', 'third', 'q2', 'q3')">Submit Answer</button>
+        </div>
+
+        <!--Third Question-->
+        <div id = 'third', style="visibility: hidden" >
+            <div id = 'q3'>
+                <h3>What is the expected output of get_directions(home, coffee_shop) given the following code snippet?</h3>
+                <BLOCKQUOTE> <h4> def get_directions(a, b): </h4>
+                    <div class="a"> directions = [“begin”]</div> 
+                    <div class="a"> if (a == home): </div>
+                        <div class="b">if (b == coffee_shop):</div>
+                            <div class="c">directions.append(“turn right”)</div>
+                            <div class="c">directions.append(“turn left”)</div>
+                            <div class="c">directions.append(“arrived”)</div>
+                        <div div class="b">else:</div>
+                            <div class="c">directions.append(“turn left”)</div>
+                    <div class="a">elif (a == coffee_shop):</div>
+                        <div class="b" >if (b == home)</div>
+                            <div class="c" >directions.append(“turn right”)</div>
+                            <div class="c" >directions.append(“turn left”)</div>
+                            <div class="c">directions.append(“arrived”)</div>
+                        <div class="b" >elif (b == school):</div>
+                            <div class="c" >directions.append(“turn left”)</div>
+                            <div class="c">directions.append(“arrived”)</div>
+                        <div class="b">else:  </div>
+                            <div class="c" >directions.append(“turn right”)</div> 
+                    <div class="a">else: </div>
+                        <div class="b" >directions.append(“rerouting”)</div>                              
+                    <div class="a">	return directions </div>
+                </BLOCKQUOTE><br>
+            </div>
+
+            <!--Answers-->
+            <form >
+                <input type="radio" name="choice" value="A"> directions = [“begin”, “turn left”, “arrived”]<br>
+                <input type="radio" name="choice" value="B"> directions = [“begin”, “turn left”, “turn right”, “arrived”]<br>
+                <input type="radio" name="choice" value="C"> directions = [“begin”, “rerouting”]<br>
+                <input type="radio" name="choice" value="D"> directions = [“begin”, “turn right”, “turn left”, “arrived”]<br></br>
+            </form>
+            <button type="button" class="btn btn-info btn-lg" id = "myBtn"  data-target="#myModal" onclick = "level2('third', 'third', 'q2', 'q3')">Submit Answer</button>
+        </div>
+        <button type="button" class="btn btn-info btn-lg" onclick="location.href = 'gladys';">Click here to complete the puzzle</button>
+    </body>
+    
+    <!--script-->
+    <script src="script.js"></script>
+</html>
