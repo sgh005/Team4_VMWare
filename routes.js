@@ -34,23 +34,6 @@ router.get("/meet_team", function (rep,res){
 });
 router.get("/mary", function (rep,res){
     //console.log("hello I am on the start page");
-<<<<<<< HEAD
-    res.render("mary");
-    
-    
-});
-router.get("/gladys", function (rep,res){
-    //console.log("hello I am on the start page");
-    res.render("gladys");
-    
-    
-});
-router.get("/ellen", function (rep,res){
-    //console.log("hello I am on the start page");
-    res.render("ellen");
-    
-    
-=======
     res.render("mary"); 
 });
 router.get("/gladys", function (rep,res){
@@ -60,7 +43,6 @@ router.get("/gladys", function (rep,res){
 router.get("/ellen", function (rep,res){
     //console.log("hello I am on the start page");
     res.render("ellen"); 
->>>>>>> master
 });
 
 module.exports= router;
