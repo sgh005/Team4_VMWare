@@ -5,11 +5,14 @@
     margin-top: 50%;
 }
 
-div.a {
-    text-indent: 50px;
+.a {
+    margin-left: 40px;
   }
-div.b {
-    text-indent: 150px;
+.b {
+    margin-left: 70px;
+}
+.c {
+    margin-left: 100px;
 }
 
   

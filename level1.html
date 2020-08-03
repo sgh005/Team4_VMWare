@@ -16,7 +16,7 @@
         <h1> Level 1 </h1>
         </div>
                 <div class="container">
-            <div id = 'og' >
+            <div id = 'space_1' >
                 <div id = 'q1'>
                 <h3>Identify the parameter in the following code snippet:</h3>
                 <BLOCKQUOTE> <h4>   def build_ship(parts):<br>
@@ -34,7 +34,7 @@
                     <input type="radio" name="choice" value="D"> assemble<br>
                 </form>
             <!-- Trigger the modal with a button -->
-            <button type="button" class="btn btn-info btn-lg" id = "myBtn"  data-target="#myModal" onclick = "submitAnswer('og', 'new', 'q1', 'q2')">Submit Answer</button>
+            <button type="button" class="btn btn-info btn-lg" id = "myBtn"  data-target="#myModal" onclick = "level1('space_1', 'space_2', 'q1', 'q2')">Submit Answer</button>
             </div>
             
             <!--<button onclick="submitAnswer()">Submit Answer</button>-->
@@ -61,7 +61,7 @@
                 </div>
             </div>
         </div>
-        <div id = 'new', style="visibility: hidden" >
+        <div id = 'space_2', style="visibility: hidden" >
             <div id = 'q2'>
                 <h3>“Parts” is a String array that contains each of the parts required to build a rocketship. Select the code that prints out each part:</h3><br></div>
                 <form >
@@ -81,7 +81,7 @@
                             <div class="b" style="margin-left: 80px"> print(parts[p])</div>
                         
                 </form>
-                <button type="button" class="btn btn-info btn-lg" id = "myBtn"  data-target="#myModal" onclick = "submitAnswer('new', 'new', 'q1', 'q2')">Submit Answer</button>
+                <button type="button" class="btn btn-info btn-lg" id = "myBtn"  data-target="#myModal" onclick = "level1('space_2', 'space_2', 'q1', 'q2')">Submit Answer</button>
         </div>
     </body>
     <!--script-->
