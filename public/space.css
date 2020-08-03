@@ -1,17 +1,21 @@
 body {
     background-image: url("stars.jpg");
     color: white;
+    font-family: "Courier new"
    }
    div{
     color: white;
     font-family: "Courier new"
     
    }
+  
+  
    .modal-content{
     position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 50%;
+    font-family: "Courier new"
 }
 
 .a {
