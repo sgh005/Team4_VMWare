@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <body>
+
+        <div class="w3-container w3-blue">
+        <h1> Level 1 </h1>
+        </div>
+                <div class="container">
+            <div id = 'og' >
+                <div id = 'q1'>
+                <h3>Identify the parameter in the following code snippet:</h3>
+                <BLOCKQUOTE> <h4>   def build_ship(parts):<br>
+                    <BLOCKQUOTE>    identify(parts)<br>
+                        ship = assemble(parts)<br>
+                        return ship<br>
+                    </BLOCKQUOTE>
+                </BLOCKQUOTE>
+                    <h4>
+                    </div>
+                <form >
+                    <input type="radio" name="choice" value="A"> ship<br>
+                    <input type="radio" name="choice" value="B"> identify<br>
+                    <input type="radio" name="choice" value="C"> parts<br>
+                    <input type="radio" name="choice" value="D"> assemble<br>
+                </form>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" id = "myBtn"  data-target="#myModal" onclick = "submitAnswer('og', 'new', 'q1', 'q2')">Submit Answer</button>
+            </div>
+            
+            <!--<button onclick="submitAnswer()">Submit Answer</button>-->
+            <br>
+            
+            <!--data-toggle="modal" -->
+        
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>You're right!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = 'new', style="visibility: hidden" >
+            <div id = 'q2'>
+                <h3>“Parts” is a String array that contains each of the parts required to build a rocketship. Select the code that prints out each part:</h3><br></div>
+                <form >
+                    <input type="radio" name="choice" value="A"> def print_parts(parts):
+                        <div class="a" style="margin-left: 40px"> for p in parts:</div>
+                        <div class="b" style="margin-left: 80px"> print(p)</div>
+
+                    <input type="radio" name="choice" value="B"> def print_parts(parts): 
+                        <div class="a" style="margin-left: 40px"> print (parts)</div>
+                    
+                    <input type="radio" name="choice" value="C"> def print_parts(parts):
+                        <div class="a" style="margin-left: 40px">while p < 10:</div>
+                        <div class="b" style="margin-left: 80px"> print(parts[p])</div>
+                    
+                        <input type="radio" name="choice" value="D"> def print_parts(parts):
+                            <div class="a" style="margin-left: 40px">while p > 0:</div>
+                            <div class="b" style="margin-left: 80px"> print(parts[p])</div>
+                        
+                </form>
+                <button type="button" class="btn btn-info btn-lg" id = "myBtn"  data-target="#myModal" onclick = "submitAnswer('new', 'new', 'q1', 'q2')">Submit Answer</button>
+        </div>
+    </body>
+    <!--script-->
+    <script src="script.js"></script>
+</html>
