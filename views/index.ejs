@@ -15,8 +15,8 @@
   
 }
 img{
-        max-width: 85%;
-        max-height: 85%;
+        max-width: 80%;
+        max-height: 80%;
         display: block; /* remove extra space below image */
     }
     .box{
@@ -33,7 +33,29 @@ img{
       font-size:900%;
       text-align:center;
       color: white;
+      font-family: "Courier new"
     }
+    .g-signin2{
+  width: 100%;
+}
+
+.g-signin2 > div{
+  margin: 0 auto;
+}
+.container { 
+  height: 200px;
+  position: relative;
+  
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
     </style>
   </head>
     <body>
@@ -42,19 +64,37 @@ img{
       <script src="script.js"></script>-->
     
     
-    <div class="container">
-        <h1>Welcome</h1>           
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="span4"></div>
-        <div class="span4"><img class="mx-auto d-block" src="puzzler.png" /></div>
-        <div class="span4"></div>
-      </div>
+    
        <!--buttons-->
-      <button type="button" class="btn btn-primary  btn-lg btn-block"  onclick="location.href = 'game_map';">Start Game</button>
-      <button type="button" class="btn btn-primary  btn-lg btn-block" onclick="location.href = 'meet_team';">Meet the Team</button>
+       <div class="container">
+        <h1>Welcome</h1>   
+        <div class="row">
+          <img class="mx-auto d-block" src="puzzler.png" /></div>
+          <div class="container">
+            <div class="center">
+            <button type="button" class="btn btn-primary  btn-lg "  onclick="location.href = 'game_map';">Start Game</button>
+          <button type="button" class="btn btn-primary  btn-lg " onclick="location.href = 'meet_team';">Meet the Team</button>
+          <script src="https://apis.google.com/js/platform.js" async defer></script>
+          <meta name="google-signin-client_id" content="914100676838-jpn4s0r4ldhum693jp35ngp6lff872kd.apps.googleusercontent.com">
+        
+            <div class="mt-2 col-md-12">
 
+           
+          <div class="g-signin2" data-onsuccess="onSignIn"
+          onclick="location.href = 'game_map';"
+          data-redirecturi="http://localhost:3000/game_map">
+            </div>
+            
+         
+         
+      
+    
+            </div>
+        </div>
+        
+      </div>
+      
+      
     </div>
     
     

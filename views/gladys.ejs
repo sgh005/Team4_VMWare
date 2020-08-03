@@ -2,59 +2,96 @@
 <!DOCTYPE html>
 <html>
     <head>
+   
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
         <title>Meet Dr.Gladys West</title>
-        <h1>Meet Dr.Gladys West</h1>
+        <input onclick="responsiveVoice.speak('Meet Doctor Gladys West, if you click on the video you can learn more about her contribution.');" type='button' value='🔊 Play' />
+       
         <style>
             body {
-        background-color: #0C0D43;
+                background-image: url("stars.jpg");
         
         
       }
+      * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
       img{
-              max-width: 40%;
-              max-height: 40%;
-              display: block; /* remove extra space below image */
+              max-width: 250%;
+              max-height: 250%;
+              /* remove extra space below image */
           }
-          .box{
-              float: left;
-              width: 50px;        
-              border: 5px solid black;
-          }    
-          .box.large{
-              height: 200px;
-          }
-          .box.small{
-              height: 100px;
-          }
+               
+      
           h1{
       font-size:300%;
       text-align:center;
       color: white;
+      font-family: "Courier new"
     }
+    .container { 
+  height: 500px;
+  position: relative;
+  
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
           </style>
     </head>
     <body>
-        <div class="container">
-            <div class="row">
-              <div class="span4">
-                <img class="mx-auto d-block" src="gladys.png" />
-              </div>
-              <div class="span4">
-                  
-
-                <iframe width="420" height="345" src="https://www.youtube.com/embed/J8d0cdt_C9g"></iframe>
-
-                  </div>
-              <div class="span4"></div>
-            </div>
-             <!--buttons-->
-             <button type="button" class="btn btn-primary  btn-lg btn-block"  onclick="location.href = 'level3';">Next Level</button>
       
-          </div>
+        <h1>Meet Dr.Gladys West</h1>
+        <div class="container">
+            
+            <div class="center">
+            <div class="row">
+                <div class="column">
+                  <img src="gladys.png" alt="Gladys" style="width:100%">
+                </div>
+                <div class="column">
+                    <iframe width="420" height="345" src="https://www.youtube.com/embed/Oy4tgtVb9BE"></iframe>
+                </div>
+                <button type="button" class="btn btn-outline-warning btn-lg btn-block" onclick="location.href = 'level3';">Next Level</button>
+              </div>
+            </div>
+            
+        </div>
+    </dive>
+          
+           
+            
+             <!--buttons-->
+             
+      
+         
     
     <!-- todo add path to next level or back to the map -->
-    <p>
-        
-    </p>
+   
     </body>
 </html>
