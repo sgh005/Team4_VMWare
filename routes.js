@@ -19,5 +19,17 @@ router.get("/mary", function (rep,res){
     
     
 });
+router.get("/gladys", function (rep,res){
+    //console.log("hello I am on the start page");
+    res.render("gladys");
+    
+    
+});
+router.get("/ellen", function (rep,res){
+    //console.log("hello I am on the start page");
+    res.render("ellen");
+    
+    
+});
 
 module.exports= router;
