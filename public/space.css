@@ -31,8 +31,8 @@ body {
     position: relative; 
     padding: .10em; 
     width: 1,000px; 
-    border: 7px solid wheat;
-    background: wheat;
+    border: 7px solid rgb(230, 229, 228);
+    background: rgb(37, 37, 37);
 }
 .ui-button {
     border: 5px solid #080808
@@ -45,6 +45,7 @@ body {
 .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
     background: black; /* your background */
     color: white;
+    font-family: "Courier new"
  }
 
 

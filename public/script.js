@@ -23,7 +23,7 @@ var level1 = function(first,second, q1, q2) {
       
      
       $( function() {
-        $('#pic1').append('<h1><strong>Great Job!</strong></h1>').append(' <img width="1000" alt="Picture1" src="https://user-images.githubusercontent.com/32419895/89215121-0ee63500-d596-11ea-87f9-72a29ccbe29f.png">').dialog({height:'auto', width:'auto'});
+        $('#pic1').append('<h1 style="text-align:center;"><strong>Great Job!</strong></h1>').append(' <p style="text-align:center;"><img width="1000" alt="Picture1" src="https://user-images.githubusercontent.com/32419895/89215121-0ee63500-d596-11ea-87f9-72a29ccbe29f.png"></p>').dialog({height:'auto', width:'auto'});
        
         //$( "#pic1" ).dialog();
       } );
@@ -33,7 +33,7 @@ var level1 = function(first,second, q1, q2) {
     
     $( function() {
    
-      $('#pic2').append('<h1><strong>Great Job!</strong></h1>').append('<img width="1000" alt="Picture1" src="mary2.png">').dialog({height:'auto', width:'auto'});
+      $('#pic2').append('<h1 style="text-align:center;"><strong>Great Job!</strong></h1>').append('<img width="1000" alt="Picture1" src="mary2.png">').dialog({height:'auto', width:'auto'});
     } );
       changeQ_A(first, second, q1, q2);
       //window.location.replace('mary') 
@@ -60,7 +60,7 @@ var level2 = function(holder, first,second, q1, q2) {
       alert('Great Job!');
       $( function() {
    
-        $('#pic3').append('<img width="300" alt="Picture1" src="gladys1.png">').dialog();
+        $('#pic3').append('<p style="text-align:center;"><img width="300" alt="Picture1" src="gladys1.png"></p>').dialog();
       } );
       changeQ_A(holder, second, q1, q2);
    
