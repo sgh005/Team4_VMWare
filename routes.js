@@ -12,6 +12,10 @@ router.get("/level1", function (rep,res){
     //console.log("hello I am on the start page");
     res.render("level1");
 });
+router.get("/level1 copy", function (rep,res){
+    //console.log("hello I am on the start page");
+    res.render("level1copy");
+});
 router.get("/level2", function (rep,res){
     //console.log("hello I am on the start page");
     res.render("level2");

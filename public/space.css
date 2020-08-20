@@ -27,3 +27,26 @@ body {
 .c {
     margin-left: 100px;
 }
+.ui-dialog {
+    position: relative; 
+    padding: .10em; 
+    width: 1,000px; 
+    border: 7px solid wheat;
+    background: wheat;
+}
+.ui-button {
+    border: 5px solid #080808
+    /*{borderColorContent}*/
+    ;
+    color: #fafafa00
+    /*{fcContent}*/
+    ;
+}
+.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+    background: black; /* your background */
+    color: white;
+ }
+
+
+
+
